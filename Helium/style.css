@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid blue;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  border: none;
+}
+body {
+  background: rgb(28, 28, 31);
+  color: #ffffff;
+  height: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left,
+.header-right {
+  width: 50%;
+}
+.header-left-container {
+  padding: 30px;
+}
+.header-left-container > h1 {
+  font-size: 5rem;
+}
+.header-left-container > h3 {
+  color: rgb(48, 48, 255);
+}
+.header-right-container {
+  padding: 20px;
+  text-align: center;
+}
+.header-right-container img {
+  width: 80%;
+  height: 530px;
+}
+.section-info {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  width: 80%;
+  height: 170px;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+.info-left {
+  padding: 8px;
+}
+.button-container {
+  padding: 5px;
+  display: grid;
+}
+.button-container button {
+  color: #ffffff;
+  border-radius: 8px;
+  width: 150px;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  background: rgb(80, 80, 238);
+}
+.info-rigth {
+  width: 80%;
+  padding: 10px;
+}
+.info-rigth h4 {
+  margin: 0 20px 0 170px;
+  text-align: left;
+}
+.Investors {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+}
+.Investors .img-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin-left: 100px;
+}
+.Investors .img-container img {
+  width: 100px;
+}
