@@ -1,16 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
 * {
   margin: 0;
-  padding: 0;
-  border: 1px solid blue;
+  padding: 5px;
   list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+  font-family: "Inter";
   border: none;
+  box-sizing: border-box;
+  color: #ffffff;
 }
 body {
   background: rgb(28, 28, 31);
-  color: #ffffff;
-  height: 100%;
+  min-height: 100vh;
 }
 nav {
   display: flex;
@@ -28,24 +29,21 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.header-left,
-.header-right {
+.header-left {
+  padding: 20px;
   width: 50%;
 }
-.header-left-container {
-  padding: 30px;
-}
-.header-left-container > h1 {
+.header-left > h1 {
   font-size: 5rem;
 }
-.header-left-container > h3 {
+.header-left > h3 {
   color: rgb(48, 48, 255);
 }
-.header-right-container {
-  padding: 20px;
+.header-right {
   text-align: center;
+  width: 50%;
 }
-.header-right-container img {
+.header-right img {
   width: 80%;
   height: 530px;
 }
@@ -55,7 +53,6 @@ header {
   text-align: center;
   background: rgb(0, 0, 0);
   width: 80%;
-  height: 170px;
   margin: 20px auto;
   border-radius: 15px;
 }
@@ -67,7 +64,6 @@ header {
   display: grid;
 }
 .button-container button {
-  color: #ffffff;
   border-radius: 8px;
   width: 150px;
   height: 30px;
@@ -97,4 +93,24 @@ header {
 }
 .Investors .img-container img {
   width: 100px;
+}
+
+/* helium maquette tablette */
+@media screen and (max-width: 1006px) {
+  .header-left > h1 {
+    font-size: 2.5rem;
+  }
+  .header-left > h3 {
+    font-size: 1rem;
+  }
+  .header-left > p {
+    font-size: 0.6rem;
+  }
+  .header-right img {
+    height: 350px;
+  }
+}
+
+/* helium maquette mobile */
+@media screen and (max-width: 511px) {
 }
