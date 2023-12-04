@@ -18,7 +18,7 @@ nav {
   justify-content: space-between;
   padding: 15px;
 }
-nav > ul {
+nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,6 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100vh;
 }
 .header-left {
   padding: 20px;
@@ -36,7 +37,7 @@ header {
 .header-left > h1 {
   font-size: 5rem;
 }
-.header-left > h3 {
+.header-left h3 {
   color: rgb(48, 48, 255);
 }
 .header-right {
@@ -44,15 +45,15 @@ header {
   width: 50%;
 }
 .header-right img {
-  width: 80%;
-  height: 530px;
+  width: 90%;
+  height: 450px;
 }
 .section-info {
   display: flex;
   justify-content: space-between;
   text-align: center;
   background: rgb(0, 0, 0);
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   border-radius: 15px;
 }
@@ -76,41 +77,92 @@ header {
   padding: 10px;
 }
 .info-rigth h4 {
-  margin: 0 20px 0 170px;
+  margin: 0 20px 0 120px;
   text-align: left;
 }
 .Investors {
-  width: 90%;
-  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 20px auto 0 80px;
   padding: 20px;
 }
-.Investors .img-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 80%;
-  margin-left: 100px;
-}
-.Investors .img-container img {
-  width: 100px;
+.Investors img {
+  width: 120px;
 }
 
 /* helium maquette tablette */
-@media screen and (max-width: 1006px) {
-  .header-left > h1 {
+@media screen and (max-width: 893px) {
+  * {
+    border: 1px solid rgb(182, 2, 125);
+  }
+  header {
+    height: 70vh;
+  }
+  .header-left h1 {
     font-size: 2.5rem;
   }
-  .header-left > h3 {
+  .header-left h3 {
     font-size: 1rem;
   }
-  .header-left > p {
-    font-size: 0.6rem;
+  .header-left p {
+    font-size: 0.8rem;
   }
   .header-right img {
     height: 350px;
+    width: 90%;
+  }
+  .info-rigth h4 {
+    margin-left: 70px;
+  }
+  .Investors {
+    margin-left: 20px;
+    padding: 20px;
+  }
+  .Investors img {
+    width: 80px;
   }
 }
 
 /* helium maquette mobile */
-@media screen and (max-width: 511px) {
+@media screen and (max-width: 637px) {
+  * {
+    border: 1px solid green;
+  }
+  nav ul {
+    width: 80%;
+  }
+  nav ul li {
+    font-size: 0.7rem;
+  }
+  header {
+    height: 110vh;
+    display: block;
+  }
+  .header-left {
+    width: 100%;
+  }
+  .header-right {
+    width: 100%;
+    text-align: center;
+  }
+  .section-info {
+    display: block;
+  }
+  .info-rigth {
+    width: 100%;
+  }
+  .button-container button,
+  .Investors img {
+    margin: 0 auto 5px auto;
+  }
+  .info-rigth h4 {
+    margin: 10px auto;
+    text-align: center;
+  }
+  .Investors {
+    display: block;
+    margin: 10px auto;
+  }
 }
